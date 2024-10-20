@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Countdown Timer Styling */
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    margin-block-start: 10px;
+    color: #4CAF50;
+}
+
+/* API Data Styling */
+#data-container {
+    margin-block-start: 20px;
+}
+
+.user {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-inline-end: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    table, th, td {
+        display: block;
+        inline-size: 100%;
+    }
+}

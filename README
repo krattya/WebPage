@@ -1,0 +1,58 @@
+HTML Structure
+
+Used throughout the index.html file.
+
+Semantic Tags: <header>, <nav>, <section>, <footer> (Lines 11–19, 22–64).
+Headings & Paragraphs: <h1>, <h2>, <p> (Lines 22, 28, 33, etc.).
+
+Forms, Links, and Media
+
+Form: A contact form for user input.
+Located in the "Contact Us" section (Lines 50–61).
+
+Links: Navigation links to different sections of the webpage.
+Found in the <nav> element (Lines 13–17).
+Media: An image with alt text for accessibility.
+Located in the "About Us" section (Line 35).
+
+ Tables
+
+A table used to display services, descriptions, and prices.
+Located in the "Services" section (Lines 38–48).
+CSS Styling
+
+Basic Styling: Applied through styles.css.
+Styling for body, headers, navigation, tables, forms (e.g., Lines 1–10 for global styles, Lines 40–60 for forms, etc.).
+Classes and IDs: Used for styling specific elements.
+.user for dynamically added API data styling (Line 65 in CSS).
+#countdown for countdown timer styling (Line 33 in CSS).
+
+Responsive Design
+
+Media query for handling small screen sizes (mobile view).
+Located at the bottom of styles.css (Lines 77–82).
+
+JavaScript Features
+
+Countdown Timer:
+
+The timer function is defined in script.js and initiated when the page loads.
+Located in the startTimer() function (Lines 3–13 in script.js).
+The timer starts on page load using window.onload (Lines 15–22).
+API Integration (Fetch):
+
+Fetches random user data from an external API and displays it dynamically.
+Located in the fetchData() function (Lines 26–41 in script.js).
+Error Handling:
+
+Displays an error message if the API call fails.
+Located within the catch() block in the fetchData() function (Lines 38–41 in script.js).
+Filtering and Sorting:
+
+Filtering user data by first name and sorting by last name using event listeners.
+Filter: filter-button click event (Lines 54–56 in script.js).
+Sort: sort-button click event (Lines 58–61 in script.js).
+Form Handling:
+
+A form submit event triggers an alert with the user’s name.
+Located in the submit event listener for the contact form (Lines 64–74 in script.js).

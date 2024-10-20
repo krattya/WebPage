@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>My name is Kalle. I'm an ICT-engineer student on my 4th year currently.</p>
+        <p>My hobbies include programming, various sports, music and videogames.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Building responsive, SEO-friendly websites</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>Creative, modern designs that capture your brand</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Consultation</td>
+                    <td>Helping you shape your online presence</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="api-data">
+        <h2>Data from API</h2>
+        <p id="loading-message">Fetching data, please wait...</p>
+        <div id="data-container"></div>
+        <div id="error-message" style="color:red;"></div>
+        <div>
+            <button id="filter-button">Filter by First Name (A-M)</button>
+            <button id="sort-button">Sort by Last Name</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
